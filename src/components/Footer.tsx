@@ -1,3 +1,5 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-foreground/5 border-t border-border py-12">
@@ -5,10 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="text-2xl font-bold mb-4">
-              <span className="text-primary">VR-eBiz</span>
-              <span className="text-accent"> Solutions</span>
-            </div>
+            <img src={logo} alt="VR-eBiz Solutions" className="h-10 w-auto mb-4" />
             <p className="text-muted-foreground text-sm">
               Your trusted partner for business transformation in India
             </p>
