@@ -14,7 +14,7 @@ const MinimalAbout = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed font-light">
               <p className="text-lg">
-                VR-eBiz Solutions is a boutique Business Consultancy firm based in Bangalore, 
+                VR e-Biz Solutions Private Limited is a boutique Business Consultancy firm based in Bangalore, 
                 the Silicon Valley of India. We provide high-quality customized solutions to 
                 companies across India and internationally.
               </p>
