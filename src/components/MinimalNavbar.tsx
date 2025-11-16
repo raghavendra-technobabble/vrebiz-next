@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const MinimalNavbar = () => {
@@ -11,27 +12,24 @@ const MinimalNavbar = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src={logo} alt="VR e-Biz Solutions Private Limited" className="h-8 w-auto" />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
+            <Link to="/services" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
               Services
-            </a>
-            <a href="#clients" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
-              Clients
-            </a>
-            <a href="#about" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
-              About
-            </a>
-            <a href="#testimonials" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
-              Testimonials
-            </a>
-            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-medium rounded-full px-6">
+            </Link>
+            <Link to="/about" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
+              About Us
+            </Link>
+            <Link to="/resources" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
+              Resources
+            </Link>
+            <a href="#contact" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
               Contact
-            </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -47,21 +45,18 @@ const MinimalNavbar = () => {
         {isOpen && (
           <div className="md:hidden py-6 animate-fade-in border-t border-border/50">
             <div className="flex flex-col space-y-4">
-              <a href="#services" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
+              <Link to="/services" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
                 Services
-              </a>
-              <a href="#clients" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
-                Clients
-              </a>
-              <a href="#about" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
-                About
-              </a>
-              <a href="#testimonials" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
-                Testimonials
-              </a>
-              <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-medium rounded-full w-full">
+              </Link>
+              <Link to="/about" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
+                About Us
+              </Link>
+              <Link to="/resources" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
+                Resources
+              </Link>
+              <a href="#contact" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
                 Contact
-              </Button>
+              </a>
             </div>
           </div>
         )}
