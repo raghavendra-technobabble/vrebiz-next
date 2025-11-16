@@ -17,7 +17,7 @@ const About = () => {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              VR-eBiz Solutions is a boutique Business Consultancy firm based in the Silicon Valley of India, Bangalore. 
+              VR e-Biz Solutions Private Limited is a boutique Business Consultancy firm based in the Silicon Valley of India, Bangalore. 
               We endeavor to provide high-quality customized solutions to various companies in India and abroad.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

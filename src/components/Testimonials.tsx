@@ -3,13 +3,13 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "VR-eBiz Solutions transformed our India entry strategy. Their deep understanding of local regulations and business culture was invaluable. We went from concept to operations in record time.",
+    quote: "VR e-Biz Solutions Private Limited transformed our India entry strategy. Their deep understanding of local regulations and business culture was invaluable. We went from concept to operations in record time.",
     author: "Sarah Chen",
     role: "VP of International Operations",
     company: "Tech Global Inc."
   },
   {
-    quote: "The Virtual CFO services provided by VR-eBiz have been game-changing for our startup. We get Fortune 500-level financial expertise without the overhead. Highly recommended.",
+    quote: "The Virtual CFO services provided by VR e-Biz have been game-changing for our startup. We get Fortune 500-level financial expertise without the overhead. Highly recommended.",
     author: "Rajesh Kumar",
     role: "Founder & CEO",
     company: "InnovateTech Solutions"

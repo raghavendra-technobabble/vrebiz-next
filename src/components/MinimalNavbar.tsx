@@ -12,7 +12,7 @@ const MinimalNavbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={logo} alt="VR-eBiz Solutions" className="h-8 w-auto" />
+            <img src={logo} alt="VR e-Biz Solutions Private Limited" className="h-8 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <img src={logo} alt="VR-eBiz Solutions" className="h-10 w-auto mb-4" />
+            <img src={logo} alt="VR e-Biz Solutions Private Limited" className="h-10 w-auto mb-4" />
             <p className="text-muted-foreground text-sm">
               Your trusted partner for business transformation in India
             </p>
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} VR-eBiz Solutions. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} VR e-Biz Solutions Private Limited. All rights reserved.</p>
         </div>
       </div>
     </footer>
