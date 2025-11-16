@@ -37,8 +37,8 @@ const MinimalContact = () => {
                 </div>
                 <div>
                   <div className="font-medium text-foreground mb-2">Email</div>
-                  <a href="mailto:info@vrebiz.in" className="text-muted-foreground hover:text-foreground transition-colors font-light">
-                    info@vrebiz.in
+                  <a href="mailto:hello@vrebiz.in" className="text-muted-foreground hover:text-foreground transition-colors font-light">
+                    hello@vrebiz.in
                   </a>
                 </div>
               </div>
@@ -49,8 +49,8 @@ const MinimalContact = () => {
                 </div>
                 <div>
                   <div className="font-medium text-foreground mb-2">Phone</div>
-                  <a href="tel:+919876543210" className="text-muted-foreground hover:text-foreground transition-colors font-light">
-                    +91 98765 43210
+                  <a href="tel:+917259464002" className="text-muted-foreground hover:text-foreground transition-colors font-light">
+                    +91 7259464002
                   </a>
                 </div>
               </div>
@@ -62,7 +62,7 @@ const MinimalContact = () => {
                 <div>
                   <div className="font-medium text-foreground mb-2">Location</div>
                   <div className="text-muted-foreground font-light">
-                    Bangalore, Karnataka<br />
+                    Bengaluru, Karnataka<br />
                     India
                   </div>
                 </div>
