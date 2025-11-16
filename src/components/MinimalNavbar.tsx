@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const MinimalNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
@@ -24,9 +25,38 @@ const MinimalNavbar = () => {
             <Link to="/about" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
               About Us
             </Link>
-            <Link to="/resources" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
-              Resources
-            </Link>
+            <div 
+              className="relative"
+              onMouseEnter={() => setResourcesOpen(true)}
+              onMouseLeave={() => setResourcesOpen(false)}
+            >
+              <button className="text-sm text-foreground/70 hover:text-foreground transition-colors flex items-center gap-1">
+                Resources
+                <ChevronDown className="w-3 h-3" />
+              </button>
+              {resourcesOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-background border border-border/50 rounded-lg shadow-lg py-2 z-50">
+                  <Link 
+                    to="/resources/case-studies" 
+                    className="block px-4 py-2 text-sm text-foreground/70 hover:text-foreground hover:bg-muted/50 transition-colors"
+                  >
+                    Case Studies
+                  </Link>
+                  <Link 
+                    to="/resources/articles" 
+                    className="block px-4 py-2 text-sm text-foreground/70 hover:text-foreground hover:bg-muted/50 transition-colors"
+                  >
+                    Articles
+                  </Link>
+                  <Link 
+                    to="/resources/blog" 
+                    className="block px-4 py-2 text-sm text-foreground/70 hover:text-foreground hover:bg-muted/50 transition-colors"
+                  >
+                    Blog Posts
+                  </Link>
+                </div>
+              )}
+            </div>
             <a href="#contact" className="text-sm text-foreground/70 hover:text-foreground transition-colors">
               Contact
             </a>
@@ -51,9 +81,28 @@ const MinimalNavbar = () => {
               <Link to="/about" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
                 About Us
               </Link>
-              <Link to="/resources" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
-                Resources
-              </Link>
+              <div>
+                <button 
+                  onClick={() => setResourcesOpen(!resourcesOpen)}
+                  className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2 flex items-center gap-1 w-full"
+                >
+                  Resources
+                  <ChevronDown className={`w-3 h-3 transition-transform ${resourcesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {resourcesOpen && (
+                  <div className="pl-4 mt-2 space-y-2">
+                    <Link to="/resources/case-studies" className="block text-sm text-foreground/60 hover:text-foreground transition-colors py-1">
+                      Case Studies
+                    </Link>
+                    <Link to="/resources/articles" className="block text-sm text-foreground/60 hover:text-foreground transition-colors py-1">
+                      Articles
+                    </Link>
+                    <Link to="/resources/blog" className="block text-sm text-foreground/60 hover:text-foreground transition-colors py-1">
+                      Blog Posts
+                    </Link>
+                  </div>
+                )}
+              </div>
               <a href="#contact" className="text-sm text-foreground/70 hover:text-foreground transition-colors py-2">
                 Contact
               </a>
